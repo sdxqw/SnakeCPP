@@ -106,7 +106,8 @@ public:
         const bool movingRight = (direction.x == 1 && direction.y == 0);
         const bool movingUp = (direction.x == 0 && direction.y == -1);
 
-        if (const bool movingDown = (direction.x == 0 && direction.y == 1); event->keysym.sym == SDLK_w && !movingDown) {
+        if (const bool movingDown = (direction.x == 0 && direction.y == 1);
+            event->keysym.sym == SDLK_w && !movingDown) {
             direction = {0, -1};
         } else if (event->keysym.sym == SDLK_s && !movingUp) {
             direction = {0, 1};
